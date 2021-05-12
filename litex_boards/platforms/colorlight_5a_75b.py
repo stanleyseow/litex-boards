@@ -189,8 +189,8 @@ _io_v8_0 = [
     # Clk
     ("clk25", 0, Pins("P6"), IOStandard("LVCMOS33")),
 
-    # Led
-    ("user_led_n", 0, Pins("T6"), IOStandard("LVCMOS33")),
+    # Led disabled
+    #("user_led_n", 0, Pins("T6"), IOStandard("LVCMOS33")),
 
     # Button
     ("user_btn_n", 0, Pins("R7"), IOStandard("LVCMOS33")),
@@ -198,7 +198,7 @@ _io_v8_0 = [
     # serial
     ("serial", 0,
         Subsignal("tx", Pins("D4")), # J1-pin2
-        Subsignal("rx", Pins("C4")), # J1-pin1
+        Subsignal("rx", Pins("T6")), # J19 LED- pin 
         IOStandard("LVCMOS33")
     ),
 
